@@ -1,0 +1,65 @@
+[AssaultRifle_Advent X2WeaponTemplate]
+FriendlyName="Magnetic Rifle (ADVENT)"
+FriendlyNamePlural="Magnetic Rifles"
+BriefSummary="Magnetized projectile tech has enabled us to create rifle-style slugthrowers. They represent a substantial improvement in power relative to conventional assault rifles."
+TacticalText="<Bullet/> Firing the primary weapon always ends the soldier's turn, in the absence of special training.\n<Bullet/> Use upgrades looted from enemies to improve the Magnetic Rifle's tactical effectiveness.\n<Bullet/> Looks like an ADVENT weapon."
+AbilityDescName="assault rifle"
+
+[Cannon_Advent X2WeaponTemplate]
+FriendlyName="Mag Cannon (ADVENT)"
+FriendlyNamePlural="Mag Cannons"
+BriefSummary="Magnetic weapons tech will let us deploy a rapid-fire version of the cannon. Our Grenadiers will be able to lay down a much deadlier volume of fire."
+TacticalText="<Bullet/> The Mag Cannon is a much more powerful, yet equally deployable, version of the conventional Cannon.\n<Bullet/> Use upgrades looted from enemies to improve the Mag Cannon's tactical effectiveness.\n<Bullet/> Looks like an ADVENT weapon."
+AbilityDescName="cannon"
+
+[Pistol_Advent X2WeaponTemplate]
+FriendlyName="Mag Pistol (ADVENT)"
+FriendlyNamePlural="Mag Pistols"
+BriefSummary="Based on the advances in magnetic weapons tech we've achieved, this new pistol boasts a substantial improvement in power over our conventional pistol."
+TacticalText="<Bullet/> Magnetic pistols are substantially more effective than their conventional precursors.\n<Bullet/> Unlike the sniper rifle, pistols can be fired with a single action.\n<Bullet/> Looks like an ADVENT weapon."
+
+[SniperRifle_Advent X2WeaponTemplate]
+FriendlyName="Gauss Rifle (ADVENT)"
+FriendlyNamePlural="Gauss Rifles"
+BriefSummary="Magnetic weapons technology has particular utility for precision slow-fire weapons like sniper rifles. The Gauss Rifle will enable our Sharpshooters to cause greater damage at extended range."
+TacticalText="<Bullet/> Sniper rifles always require both actions to fire.\n<Bullet/> They are less accurate at close range, but deadly at a distance.\n<Bullet/> Use upgrades looted from enemies to improve the Gauss Rifle's tactical effectiveness.\n<Bullet/> Looks like an ADVENT weapon."
+AbilityDescName="sniper rifle"
+
+[Shotgun_Advent X2WeaponTemplate]
+FriendlyName="Shard Gun (ADVENT)"
+FriendlyNamePlural="Shard Guns"
+BriefSummary="Magnetic weapons technology will let us synthesize alien alloy fragments into a spray-style projectile, and our Rangers can use it to dramatic effect: the closer the better."
+TacticalText="<Bullet/> Magnetized weapon technology makes for an especially effective improvement of XCOM's combat shotgun.\n<Bullet/> Shotgun-style weapons are extremely effective at close range, but their accuracy drops off quickly at longer range.\n<Bullet/> Use upgrades looted from enemies to improve the Shard Gun's tactical effectiveness.\n<Bullet/> Looks like an ADVENT weapon."
+AbilityDescName="shotgun"
+
+[Sword_Advent X2WeaponTemplate]
+FriendlyName="Arc Blade (ADVENT)"
+FriendlyNamePlural="Arc Blades"
+BriefSummary="When pure kinetic energy is no longer sufficient in the field, the Arc Blade may prove necessary. It boosts the standard Sword's combat effectiveness with the addition of an electric field, capable of stunning enemies that are not killed outright."
+TacticalText="<Bullet/> The Arc Blade adds a powerful electric burst to the sword's kinetic impact, improving its damage and adding a chance to stun enemy targets.\n<Bullet/> Looks like an ADVENT Stun Baton."
+AbilityDescName="sword"
+
+[PsiAmp_Advent_MG X2WeaponTemplate]
+FriendlyName="Advanced Psi Amp (ADVENT)"
+FriendlyNamePlural="Advanced Psi Amps"
+BriefSummary="This evolved version of the Psi Amp channels the user's Psionic energy far more clearly, enabling greater psionic strength in our operatives. Psi Offense and psionic attack damage of some abilities is improved when carrying this advanced amplifier."
+TacticalText="<Bullet/> The Advanced Psi Amp increases a Psi Operative's psionic strength by +20.\n<Bullet/> Psi Strength determines the potency of many of your psychic abilities.\n<Bullet/> The Advanced Psi Amp also increases the damage done by many psionic attacks.\n<Bullet/> Looks like an ADVENT Psi Amp."
+
+[GrenadeLauncher_Advent X2GrenadeLauncherTemplate]
+FriendlyName="Advanced Grenade Launcher (ADVENT)"
+FriendlyNamePlural="Advanced Grenade Launchers"
+BriefSummary="Our Advanced Grenade Launcher uses magnetic technology to propel grenades further than our conventional launcher, and grants a larger effect radius to any launched projectiles."
+TacticalText="<Bullet/> The Advanced Grenade Launcher has an increased range and explosive radius over the standard Grenade Launcher.\n<Bullet/> Looks like an ADVENT weapon."
+
+[SMG_Advent X2WeaponTemplate]
+FriendlyName="Stuttermag (ADVENT)"
+FriendlyNamePlural="Stuttermags"
+BriefSummary="The Stuttermag is a lightweight version of the Magnetic Rifle and fills a similar role to the SMG, trading power, ammo and accuracy at range for increased soldier mobility and concealment."
+TacticalText="<Bullet/> Firing the primary weapon always ends the soldier's turn, in the absence of special training.\n<Bullet/> Use upgrades recovered from ADVENT enemies to improve the Stuttermag's tactical effectiveness. \n<Bullet/> SMG-style weapons offer bonus mobility, close-quarters accuracy and concealment relative to assault rifles, but they do less damage, have less ammo, and suffer accuracy penalties at long range.\n<Bullet/> Looks like an ADVENT weapon."
+AbilityDescName="SMG"
+
+[Gremlin_Advent X2GremlinTemplate]
+FriendlyName="GREMLIN Mark II (ADVENT)"
+FriendlyNamePlural="Mk II GREMLINS"
+BriefSummary="The Mark II GREMLIN is an improved version of the standard GREMLIN Drone. Not only will it greatly increase the hacking stat of our Specialists, but many Specialist abilities improve their effectiveness when the GREMLIN becomes more advanced."
+TacticalText="<Bullet/> The GREMLIN Drone allows Specialists to execute a variety of battlefield tasks from safer distances.\n<Bullet/> The GREMLIN accompanies the Specialist, and can be issued protocols which aid allies, hack electronic targets, or damage enemies.\n<Bullet/> The GREMLIN generally goes unnoticed by enemies, and cannot take damage or be destroyed. It will shut down if its owner is incapacitated or killed.\n<Bullet/> Looks like an ADVENT GREMLIN."
