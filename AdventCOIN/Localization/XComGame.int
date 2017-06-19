@@ -63,3 +63,11 @@ FriendlyName="GREMLIN Mark II (ADVENT)"
 FriendlyNamePlural="Mk II GREMLINS"
 BriefSummary="The Mark II GREMLIN is an improved version of the standard GREMLIN Drone. Not only will it greatly increase the hacking stat of our Specialists, but many Specialist abilities improve their effectiveness when the GREMLIN becomes more advanced."
 TacticalText="<Bullet/> The GREMLIN Drone allows Specialists to execute a variety of battlefield tasks from safer distances.\n<Bullet/> The GREMLIN accompanies the Specialist, and can be issued protocols which aid allies, hack electronic targets, or damage enemies.\n<Bullet/> The GREMLIN generally goes unnoticed by enemies, and cannot take damage or be destroyed. It will shut down if its owner is incapacitated or killed.\n<Bullet/> Looks like an ADVENT GREMLIN."
+
+
+
+[AdvRifleman X2CharacterTemplate]
+strCharacterName="ADVENT Rifleman"
+
+[AdvCaptain X2CharacterTemplate]
+strCharacterName="ADVENT Captain"

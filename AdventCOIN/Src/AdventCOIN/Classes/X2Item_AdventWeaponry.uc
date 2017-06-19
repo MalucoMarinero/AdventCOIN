@@ -368,7 +368,7 @@ static function X2DataTemplate CreateTemplate_SMG_Advent()
 	Template.EquipSound = "Magnetic_Weapon_Equip";
 	Template.Tier = 2;
 
-	Template.Abilities.AddItem('SMG_MG_Advent_StatBonus');
+	/* Template.Abilities.AddItem('SMG_MG_Advent_StatBonus'); */
 	/* Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, class'X2Ability_SMGAbilities'.default.SMG_MAGNETIC_MOBILITY_BONUS); */
 
 	Template.RangeAccuracy = default.MIDSHORT_MAGNETIC_RANGE;

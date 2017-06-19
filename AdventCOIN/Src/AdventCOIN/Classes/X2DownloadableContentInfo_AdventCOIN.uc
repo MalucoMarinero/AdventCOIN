@@ -14,8 +14,6 @@ static event OnPostTemplatesCreated()
 {
   `log("AdventCOIN :: PresentAndCorrect");
 
-  // scrubbing M1/2/3s and boil down to soldier types
-  // XComTacticalMissionManager.InclusionExclusionList
-  // XComTacticalMissionManager.ConfigurableEncounters
-  // XComTacticalMissionManager.MissionSchedules
+  class'AdventCOIN_ScrubMissionManager'.static.ScrubInclusionExclusionLists();
+  class'AdventCOIN_ScrubMissionManager'.static.ReplaceConfigurableEncounterSpawns();
 }

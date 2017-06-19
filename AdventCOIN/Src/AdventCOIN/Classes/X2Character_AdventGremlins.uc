@@ -14,7 +14,7 @@ static function X2CharacterTemplate CreateGremlinAdventTemplate()
 	local X2CharacterTemplate CharTemplate;
 
 	`CREATE_X2CHARACTER_TEMPLATE(CharTemplate, 'GremlinAdvent');
-	CharTemplate.CharacterBaseStats[eStat_HP] = 1;
+  CharTemplate.CharacterBaseStats[eStat_HP] = 1;
 	CharTemplate.CharacterBaseStats[eStat_Offense] = 0;
 	CharTemplate.CharacterBaseStats[eStat_Defense] = 0;
 	CharTemplate.CharacterBaseStats[eStat_Mobility] = 12;
