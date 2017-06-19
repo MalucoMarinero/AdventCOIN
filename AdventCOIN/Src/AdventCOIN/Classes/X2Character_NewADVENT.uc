@@ -90,8 +90,8 @@ static function X2CharacterTemplate CreateTemplate_AdvCaptain()
 	CharTemplate.CharacterGroupName = 'AdventCaptain';
 	CharTemplate.DefaultLoadout='AdvCaptain_Loadout';
 	CharTemplate.BehaviorClass=class'XGAIBehavior';
-	CharTemplate.strPawnArchetypes.AddItem("GameUnit_AdvCaptain.ARC_GameUnit_AdvCaptainM3_M");
-	CharTemplate.strPawnArchetypes.AddItem("GameUnit_AdvCaptain.ARC_GameUnit_AdvCaptainM3_F");
+	CharTemplate.strPawnArchetypes.AddItem("GameUnit_AdvCaptain.ARC_GameUnit_AdvCaptainM1_M");
+	CharTemplate.strPawnArchetypes.AddItem("GameUnit_AdvCaptain.ARC_GameUnit_AdvCaptainM1_F");
 	Loot.ForceLevel=0;
 	Loot.LootTableName='AdvCaptainM3_BaseLoot';
 	CharTemplate.Loot.LootReferences.AddItem(Loot);

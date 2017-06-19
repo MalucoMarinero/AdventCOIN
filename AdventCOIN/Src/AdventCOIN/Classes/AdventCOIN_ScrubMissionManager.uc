@@ -1,5 +1,14 @@
 class AdventCOIN_ScrubMissionManager extends Object config(AdventCOIN);
 
+struct AdventCOIN_AIJobInfo_Addition
+{
+	var name JobName;						// Name of this job.
+	var name NewCharacterName;				// The name of the new character type being added
+	var name BeforeUnit;					// Put the NewCharacter Before this unit, if possible
+	var name AfterUnit;						// Put the NewCharacter After this unit, if possible
+	var int DefaultPosition;				// Default index to insert at if cannot find based on name
+};
+
 struct AdventCOIN_InclusionPatch
 {
   var name ListID;
@@ -15,6 +24,79 @@ struct AdventCOIN_Replacement
 var config array<name> TemplateNamesToRemove;
 var config array<AdventCOIN_InclusionPatch> InclusionExclusionPatches;
 var config array<AdventCOIN_Replacement> AdventReplacements;
+var config array<AdventCOIN_AIJobInfo_Addition> JobListingAdditions; // Definition of qualifications for each job for this new character
+
+
+static function UpdateAIJobs()
+{
+	local X2AIJobManager JobMgr;
+	local X2CharacterTemplateManager CharacterMgr;
+	local X2CharacterTemplate CharTemplate;
+	local AdventCOIN_AIJobInfo_Addition Addition;
+	local int AdditionIndex, JobIdx;
+	local AIJobInfo JobInfo;
+	local name MyName;
+
+	//retrieve Managers
+	JobMgr = `AIJOBMGR;
+	CharacterMgr = class'X2CharacterTemplateManager'.static.GetCharacterTemplateManager();
+
+	//for debugging, to verify that the AIJobManager is alive and has data
+	foreach JobMgr.JobListings(JobInfo)
+	{
+	}
+
+	foreach default.JobListingAdditions(Addition)
+	{
+		MyName = Addition.NewCharacterName;
+		CharTemplate = CharacterMgr.FindCharacterTemplate(MyName);
+		if(CharTemplate == none)
+		{
+			`REDSCREEN("UpdateAIJobs : Invalid character template = " $ MyName);
+			continue;
+		}
+
+		//JobInfo = JobMgr.GetJobListing(Addition.JobName);
+		JobIdx = JobMgr.JobListings.Find('JobName', Addition.JobName);
+
+		if(JobMgr.JobListings[JobIdx].JobName == '') 
+		{
+			`REDSCREEN("UpdateAIJobs : Invalid job name = " $ Addition.JobName);
+			continue;
+		}		
+
+		if(Addition.BeforeUnit != '')
+		{
+			AdditionIndex = JobMgr.JobListings[JobIdx].ValidChar.Find(Addition.BeforeUnit);
+			if(AdditionIndex != INDEX_NONE)
+			{
+				JobMgr.JobListings[JobIdx].ValidChar.InsertItem(AdditionIndex, MyName);
+				continue;
+			}
+		}
+
+		if(Addition.AfterUnit != '')
+		{
+			AdditionIndex = JobMgr.JobListings[JobIdx].ValidChar.Find(Addition.AfterUnit);
+			if(AdditionIndex != INDEX_NONE)
+			{
+				JobMgr.JobListings[JobIdx].ValidChar.InsertItem(AdditionIndex+1, MyName);
+				continue;
+			}
+		}
+		//default to default index value
+		AdditionIndex = Addition.DefaultPosition;
+		if(AdditionIndex >= JobMgr.JobListings[JobIdx].ValidChar.Length)
+		{
+			JobMgr.JobListings[JobIdx].ValidChar.AddItem(MyName);
+		}
+		else
+		{
+			AdditionIndex = Max(0, AdditionIndex);
+			JobMgr.JobListings[JobIdx].ValidChar.InsertItem(AdditionIndex, MyName);
+		}
+	}
+}
 
 
 static function ScrubInclusionExclusionLists ()
