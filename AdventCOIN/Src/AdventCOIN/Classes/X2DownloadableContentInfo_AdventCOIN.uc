@@ -16,4 +16,5 @@ static event OnPostTemplatesCreated()
 
   class'AdventCOIN_ScrubMissionManager'.static.ScrubInclusionExclusionLists();
   class'AdventCOIN_ScrubMissionManager'.static.ReplaceConfigurableEncounterSpawns();
+  class'AdventCOIN_ScrubMissionManager'.static.UpdateAIJobs();
 }
